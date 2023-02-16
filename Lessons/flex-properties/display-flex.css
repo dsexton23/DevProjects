@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .container {
+    height: 150px;
+    background-color: whitesmoke;
+  }
+  
+  .box {
+    background-color: dodgerblue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid lightgrey;
+  }
+  
+  #flex {
+   display: flex;
+  }
+
+  #inline-flex{
+    display: inline-flex;
+  }
+
+  
+#flexstart {
+    justify-content: flex-start;
+    display: flex;
+   }
+   
+#flexend {
+   justify-content: flex-end;
+   display: flex;
+   }
+   
+#center {
+   justify-content: center;
+   display: flex;
+   }
+   
+#spacearound {
+   justify-content: space-around;
+   display: flex;
+   }
+   
+#spacebetween {
+   justify-content: space-between;
+   display: flex;
+   }
+
+#flexstartv {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+  
+#flexendv {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+  
+#centerv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+#baseline {
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+  }
+
+.left,
+.center,
+.right {
+    min-height: 75px;
+    width: 125px;
+    background-color: dodgerblue;
+    border: 2px solid lightgrey;
+  }
+  
+#baseline .centerv {
+    height: 100px;
+    width: 100px;
+    border: 5px solid turquoise;
+  }
+  

@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+
+// Creates a menu form that asks the following questions and provides form options for submissions,
+// what type of protein would you like
+// how many patties would you like
+// how do you want your patties cooked(slider)
+// what toppings would you like(check all that apply)
+// would you like to add Cheese(yes/no)
+// what type of bun(dropdown)
+// what type of sauce would you like
+// anything else(textbox)
+// submit button
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Checkbox Input</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form>
+        <h1>Create a burger!</h1>
+        <section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <hr>
+        
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input id='lettuce' name='topping' type='checkbox' value='lettuce'>
+					<label for="lettuce">Lettuce</label>
+          <input id='tomato' name='topping' type='checkbox' value='tomato'>
+          <label for="tomato">Tomato</label>
+          <input id='bacon' name='topping' type='checkbox' value='bacon'>
+          <label for='bacon'>Bacon</label>
+        </section>
+        
+        <section class="cheesy">
+          <span>Would you like to add cheese?</span>
+          <br>
+          <input id='yes' type='radio' name='cheese' value ='yes'>
+          <label for="yes">Yes</label>
+          <input id='no' type='radio' name='cheese' value ='no'>
+          <label for="no">No</label>
+        </section>
+
+        <section class="bun-type">
+			<label for="bun">What type of bun would you like?</label>
+			<select id='bun' value='dropdown' name='bun'class='bun-type'>
+                <option value='sesame'>Sesame</option>
+                <option value='potato'>Potato</option>
+                <option value='sourdough'>Sourdough</option>
+            </select>
+        </section>
+
+        <section class="sauce-selection">
+		    <label for="sauce">What type of sauce would you like?</label>
+            <input type="text" list="sauces" id="sauce" name="sauce">
+			<datalist id='sauces'>
+                <option value='Ketchup'></option>
+                <option value='Mayo'></option>
+                <option value='A1'></option>
+            </datalist>
+        </section>
+
+        <section class="extra-info">
+            <label for="extra">Anything else you want to add?</label>
+            <br>
+		    <textarea id='extra' name='extra' rows='3' cols='40'></textarea>
+        </section>
+
+        <section class="submission">
+          <!--Add your code below-->
+          <input type='submit' value='Submit'>
+        </section>
+
+      </form>
+    </section>
+  </body>
+</html>
